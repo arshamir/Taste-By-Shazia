@@ -1,0 +1,93 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background image section */
+.background-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.background-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.brand-detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* adjust as needed */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* better visibility */
+    text-align: center;
+}
+.brand-detail h1 {
+    text-align: center;
+    color: #000000; /* Pure black */
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); /* Optional for contrast */
+}
+.brand-detail p {
+    color: #FFD700; /* Gold-yellow (keeps your brand) */
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); /* Stronger shadow for better contrast */
+    font-weight: 600; /* Optional: makes text thicker for clarity */
+}
+.btn-1 {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+     display: inline-block;
+}
+/* Navbar styling */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 30px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+}
+
+/* Logo styling */
+.logo img {
+  height: 120px;
+  border-radius: 50%;
+}
+
+/* Navigation links */
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  color: #ffcc00; /* highlight on hover */
+}
