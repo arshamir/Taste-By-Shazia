@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Taste By Shazia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<header class="menu-header">
+  <img src="./images/background-image.png" alt="background" />
+  <nav class="menu-navbar">
+    <div class="menu-logo">
+     <a href="home.html">
+        <img src="./images/main-logo.png" alt="logo">
+      </a>
+    </div>
+    <div class="menu-nav-links">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+            <a href="javascript:void(0)" onclick="openCart()" title="View Cart">
+            <i class="fas fa-shopping-cart"></i>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<section class="menu-portion">
+  <h2 class="meal-time">Choose Your Meal Time</h2>
+  <div class="portion-container">
+
+    <div class="portion-card" role="button" data-target="breakfast-menu">
+      <img src="./images/breakfastportion.webp" alt="Freshly made breakfast options" class="lazy-image" />
+      <h3>Breakfast</h3>
+    </div>
+
+    <div class="portion-card" role="button" data-target="lunch-menu">
+      <img src="./images/lunch-dinner.jpg" alt="Lunch and Dinner meals" class="lazy-image"/>
+      <h3>Lunch/Dinner</h3>
+    </div>
+
+    <div class="portion-card" role="button" data-target="kids-menu">
+      <img src="./images/kids-portion.jpg" alt="Kids meal options" class="lazy-image" />
+      <h3>Kids Menu</h3>
+    </div>
+
+    <div class="portion-card" role="button" data-target="diet-menu">
+      <img src="./images/diet-portion.jpg" alt="Healthy diet meals" class="lazy-image" />
+      <h3>Diet Portion</h3>
+    </div>
+
+    <div class="portion-card" role="button" data-target="sides-menu">
+      <img src="./images/sides.jpg" alt="sides selection" class="lazy-image" />
+      <h3>Sides</h3>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Hidden Menus -->
+<section id="breakfast-menu" class="full-menu-section">
+  <button class="close-btn">✕</button> <!-- no onclick -->
+  <h3>Breakfast Menu</h3>
+  <div class="menu-content">
+     <div class="menu-group">
+    <div class="menu-item">
+      <img src="./images/paratha.jpg" alt="paratha">
+      <h4>Paratha</h4>
+      <p>Flaky, golden flatbread cooked fresh on a tawa.</p>
+      <p>Price: Rs. 90</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+      <div class="menu-item">
+      <img src="./images/aloo-paratha.jpg" alt="aloo paratha">
+      <h4>Aloo Paratha</h4>
+      <p>Crispy paratha filled with flavorful spiced potatoes.</p>
+      <p>Price: Rs. 120</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="./images/half fried egg (simple).jpg" alt="simple half fried egg" class="lazy-image">
+      <h4>Half Fried Egg (Simple)</h4>
+      <p>Classic half-fried egg with a runny yolk.</p>
+      <p>Price: Rs. 70</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="./images/full fry egg (simple).jpg" alt="simple full fried egg" class="lazy-image">
+      <h4>Full Fried Egg (Simple)</h4>
+      <p>Fully cooked egg with crispy edges.</p>
+      <p>Price: Rs. 80</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="./images/half fried egg (desi).jpg" alt="desi half fried egg" class="lazy-image">
+      <h4>Half Fried Egg (Desi)</h4>
+      <p>Spiced half-fried egg with desi masala twist.</p>
+      <p>Price: Rs. 100</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="./images/full fry egg (desi).jpg" alt="desi full fried egg" class="lazy-image">
+      <h4>Desi Full Fried Egg</h4>
+      <p>Egg fried with green chili, onion, and spices.</p>
+      <p>Price: Rs. 110</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="./images/omelette (simple).jpg" alt="simple omelette" class="lazy-image">
+      <h4>Omelette (Simple)</h4>
+      <p>Fluffy plain omelette, lightly seasoned.</p>
+      <p>Price: Rs. 170</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="./images/omelette (desi egg).jpg" alt="desi omelette" class="lazy-image">
+      <h4>Desi Omelette</h4>
+      <p>Omelette with onions, green chili & fresh coriander.</p>
+      <p>Price: Rs. 200</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="./images/french-toast.png" alt="french toast" class="lazy-image">
+      <h4>French Toast</h4>
+      <p>Sweet & fluffy bread slices dipped in egg and fried.</p>
+      <p>Price: Rs. 299</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="./images/sandwitch.jpg" alt="sandwitch" class="lazy-image">
+      <h4>Sandwich</h4>
+      <p>Toasted sandwich with egg & mayo filling.</p>
+      <p>Price: Rs. 130</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="./images/chai.jpg" alt="chai" class="lazy-image">
+      <h4>Chai</h4>
+      <p>Traditional kadak doodh patti chai.</p>
+      <p>Price: Rs. 120</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="./images/lassi.jpg" alt="Lassi" class="lazy-image">
+      <h4>Lassi</h4>
+      <p>Refreshing yogurt-based drink served chilled.</p>
+      <p>Price: Rs. 150</p>
+      <button class="order">Add To Cart</button>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id="lunch-menu" class="full-menu-section">
+  <button class="close-btn">✕</button> <!-- no onclick -->
+  <h3>Lunch/Dinner Menu</h3>
+  
+  <div class="menu-content">
+    <!-- Main Dishes -->
+    <div class="menu-group">
+      <div class="group-title">
+         <h4>Main Dishes</h4>
+      </div>
+ 
+  <div class="menu-item">
+    <img src="./images/chickenkarahi.jpg" alt="Chicken Karahi" class="lazy-image">
+    <h4>Chicken Karahi</h4>
+    <p>Tender chicken cooked in tomato-based masala with green chilies.</p>
+    <p>Price: Rs. 2,100/-kg</p>
+    <button class="order">Add To Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="./images/chicken-quorma.jpg" alt="Chicken Quorma" class="lazy-image">
+    <h4>Chicken Quorma</h4>
+    <p>Rich, creamy chicken curry with aromatic spices.</p>
+    <p>Price: Rs. 1,800/-kg</p>
+    <button class="order">Add To Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="./images/mutton-karahi.jpg" alt="Mutton Karahi" class="lazy-image">
+    <h4>Mutton Karahi</h4>
+    <p>Spicy mutton dish simmered in desi-style karahi sauce.</p>
+    <p>Price: Rs. 3,200/-kg</p>
+    <button class="order">Add To Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="./images/beef-karahi.jpg" alt="Beef Karahi" class="lazy-image">
+    <h4>Beef Karahi</h4>
+    <p>Slow-cooked beef with bold spices and a fine gravy.</p>
+    <p>Price: Rs. 2,500/-kg</p>
+    <button class="order">Add To Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="./images/aloo-ghost(beef).jpg" alt="Aloo Ghost(Beef)" class="lazy-image">
+    <h4>Aloo Ghost Beef</h4>
+    <p>Beef and potatoes stewed together in traditional spices.</p>
+    <p>Price: Rs. 2,000/-kg</p>
+    <button class="order">Add To Cart</button>
+  </div>
+</div> 
+
+    <!-- Rice Dishes -->
+    <div class="menu-group">
+      <div class="group-title">
+           <h4>Rice</h4>
+      </div>
+      
+    <div class="menu-item">
+      <img src="./images/biryani.jpeg" alt="Chicken Biryani" class="lazy-image">
+      <h4>Chicken Biryani</h4>
+      <p>Fragrant rice layered with spiced chicken and herbs.</p>
+      <p>Price: Rs. 2,550/-kg</p>
+      <button class="order">Add To Cart</button>
+    </div>
+    
+    <div class="menu-item">
+      <img src="./images/mutton-pulao.png" alt="Mutton Pulao" class="lazy-image">
+      <h4>Mutton Pulao</h4>
+      <p>Aromatic rice cooked with tender mutton and whole spices.</p>
+      <p>Price: Rs. 3,500/-kg</p>
+      <button class="order">Add To Cart</button>
+    </div>
+    
+    <div class="menu-item">
+      <img src="./images/vegetable-rice.jpg" alt="Vegetable Rice" class="lazy-image">
+      <h4>Vegetable Rice</h4>
+      <p>Stir-fried rice with seasonal vegetables and mild seasoning.</p>
+      <p>Price: Rs. 1,300/-kg</p>
+      <button class="order">Add To Cart</button>
+    </div>
+    
+    <div class="menu-item">
+      <img src="./images/egg-fried-rice.jpg" alt="Egg Fried Rice" class="lazy-image">
+      <h4>Egg Fried Rice</h4>
+      <p>Fluffy rice tossed with eggs, onions, and soy flavor.</p>
+      <p>Price: Rs. 1,100/-kg</p>
+      <button class="order">Add To Cart</button>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="kids-menu" class="full-menu-section">
+  <button class="close-btn">✕</button> <!-- no onclick -->
+  <h3>Kids Menu</h3>
+  <div class="menu-content">
+     <div class="menu-group">
+     <div class="menu-item">
+      <img src="./images/french-fries.jpg" alt="Simple Fries" class="lazy-image">
+      <h4>Simple Fries</h4>
+      <p>Lightly salted crispy potato fries perfect for little hands.</p>
+      <p>Price: Rs. 250</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+     <div class="menu-item">
+      <img src="./images/nuggets.jpg" alt="Nuggets" class="lazy-image">
+      <h4>Nuggets</h4>
+      <p> Crunchy chicken nuggets loved by kids of all ages.</p>
+      <p>Price: Rs. 350</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+     <div class="menu-item">
+      <img src="./images/kids-burger.jpg" alt="Kids Burger" class="lazy-image">
+      <h4>Kids Burger</h4>
+      <p>Mini burger with chicken patty and cheese in a soft bun.</p>
+      <p>Price: Rs. 300</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+     <div class="menu-item">
+      <img src="./images/banana-milkshake.jpg" alt="Banana Milkshake" class="lazy-image">
+      <h4>Banana Milkshake</h4>
+      <p>Banana shake made with fresh bananas and milk.</p>
+      <p>Price: Rs. 200</p>
+      <button class="order">Add To Cart</button>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id="diet-menu" class="full-menu-section">
+  <button class="close-btn">✕</button>
+  <h3>Diet Portion</h3>
+  <div class="menu-content">
+    <div class="menu-group">
+      <div class="menu-item">
+      <img src="./images/weight-loss-salad.jpg" alt="Weight Loss Salad" class="lazy-image">
+      <h4>Weight Loss Salad</h4>
+      <p>Made with chanay to provide fiber and keep you satisfied.</p>
+      <p>Price: Rs. 250</p>
+      <button class="order">Add To Cart</button>
+    </div>
+
+      <div class="menu-item">
+      <img src="./images/weight-gain-salad.jpg" alt="Weight Gain Salad" class="lazy-image">
+      <h4>Weight Gain Salad</h4>
+      <p>Includes chicken and cheese to boost calories and nutrition.</p>
+      <p>Price: Rs. 400</p>
+      <button class="order">Add To Cart</button>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id="sides-menu" class="full-menu-section">
+<button class="close-btn">✕</button>
+  <h3>Sides</h3>
+  <div class="menu-content">
+    <div class="menu-group">
+      <div class="menu-item">
+      <img src="./images/kebab.jpg" alt="Kebab" class="lazy-image">
+      <h4>Kebab</h4>
+      <p>Tender, flavorful kebabs cooked to perfection.</p>
+      <p>Price: Rs. 800/-kg</p>
+      <button class="order">Add To Cart</button>
+    </div>
+      <div class="menu-item">
+      <img src="./images/salad.jpg" alt="Salad" class="lazy-image">
+      <h4>Salad</h4>
+      <p> A light mix of fresh vegetables, perfect for any meal.</p>
+      <p>Price: Rs. 200</p>
+      <button class="order">Add To Cart</button>
+    </div>
+      <div class="menu-item">
+      <img src="./images/raita.jpg" alt="Raita" class="lazy-image">
+      <h4>Raita</h4>
+      <p>Cool yogurt dip with cucumber and spices.</p>
+      <p>Price: Rs. 150</p>
+      <button class="order">Add To Cart</button>
+    </div>
+      <div class="menu-item">
+      <img src="./images/green-chutney.jpg" alt="Green Chutney" class="lazy-image">
+      <h4>Green Chutney</h4>
+      <p>Spicy green coriander and mint chutney for a desi kick.</p>
+      <p>Price: Rs. 150</p>
+      <button class="order">Add To Cart</button>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- Top Cart Panel -->
+<div id="cart-panel" class="cart-panel">
+  <button class="close-cart-btn" onclick="closeCart()">✖</button>
+  <h3 class="your-cart">Your Cart</h3>
+  <ul id="cart-items"></ul>
+  <p id="cart-total">Total: Rs. 0</p>
+  <div class="cart-buttons">
+    <button class="cart-btn" onclick="addToCartAndClose()">Add to Cart</button>
+    <button class="cart-btn checkout" onclick="openCheckout()">Checkout</button>
+  </div>
+</div>
+
+</body>
+<footer class="footer">
+  <div class="footer-bg"></div>
+  <div class="footer-content">
+    <h3>Connect With Us</h3>
+    <p>Follow us on social media for latest updates and promotions!</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/Shazia Amir" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/taste.byshazia" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@taste.by.shazia" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/923360898084" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2025 Taste By Shazia. All rights reserved.</p>
+  </div>
+</footer>
+<script src="index.js"></script>
+</html>

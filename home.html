@@ -3,30 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taste By Shazia | Homepage</title>
+    <title>Home | Taste By Shazia</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+        <!-- Add this at the bottom of every page (before </body>) -->
+<div id="cart-panel" class="cart-panel">
+  <button class="close-cart-btn" onclick="closeCart()">×</button>
+  <h3 class="your-cart">Your Cart</h3>
+  <ul id="cart-items"></ul>
+  <div id="cart-total">Total: Rs. 0</div>
+  <div class="cart-buttons">
+    <button class="cart-btn" onclick="closeCart()">Close</button>
+    <button class="cart-btn checkout" onclick="openCheckout()">Checkout</button>
+  </div>
+</div>
 <body>
     <section class="background-img">
         <img src="./images/background-image.png" alt="background-image" width="100%">
         <div class="brand-detail">
              <h1>Taste By Shazia</h1>
              <p>Healthy & Hygienic Food At Your DoorStep</p>
-             <button class="btn">Order Now</button>
+             <a href="./menu.html" class="btn">Explore The Menu</a>
+
         </div>
          <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="./images/main-logo.png" alt="logo">
+                <a href="home.html">
+                 <img src="./images/main-logo.png" alt="logo">
+                </a>
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="about.html">About</a></li>
-                     <li><a href="about.html">Menu</a></li>
-                      <li><a href="about.html">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                     <li><a href="menu.html">Menu</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                       <li>
+                        <a href="javascript:void(0)" onclick="openCart()" title="View Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        </a>
+                       </li>
                 </ul>
             </div>
         </nav>
+
          </header>
     </section>
     <section class="featured-dishes">
@@ -35,20 +57,98 @@
             <img src="./images/biryani.jpeg" alt="biryani">
             <h3>Biryani</h3>
             <p>Delicious aromatic rice layered with spiced chicken, slow-cooked to perfection.</p>
-            <button class="btn">Add To Cart</button>
+            <a href="./menu.html" class="btn">Explore The Menu</a>
         </div>
         <div class="samosa">
             <img src="./images/chickensamosa.jpg" alt="samosa">
             <h3>Samosa</h3>
             <p>Crispy homemade samosas stuffed with flavorful minced chicken filling.</p>
-            <button class="btn">Add To Cart</button>
+            <a href="./menu.html" class="btn">Explore The Menu</a>
         </div>
           <div class="chickenkarahi">
             <img src="./images/chickenkarahi.jpg" alt="chickenkarahi">
             <h3>Chicken Karahi</h3>
             <p>Tender chicken karahi cooked in tomatoes, green chilies, and spices.</p>
-            <button class="btn">Add To Cart</button>
+            <a href="./menu.html" class="btn">Explore The Menu</a>
         </div>
     </section>
+    <section class="about" id="about">
+  <h2>About Us</h2>
+
+  <!-- Restaurant Info - Left -->
+   <div class="about-boxes">
+  <div class="restaurant">
+    <i class="material-icons restaurant-icon">restaurant</i>
+    <h3>Freshly Cooked, Delivered in Real-Time</h3>
+    <p>
+      Welcome to <strong>Taste by Shazia</strong> — a real-time home-based restaurant where every meal is made-to-order.
+      As soon as you place your order, our kitchen starts preparing your dish using fresh ingredients and traditional
+      recipes passed down through generations.
+    </p>
+    <p>
+      Our system updates live order status, so you'll know exactly when your meal is being cooked, packed, and dispatched.
+      No waiting in the dark—get real-time notifications via SMS or WhatsApp!
+    </p>
+    <p>
+      Whether you're craving a quick chicken samosa or a full biryani feast, we cook it fresh the moment your
+      order comes in. Our small-batch, just-in-time system ensures you never get reheated food.
+    </p>
+  </div>
+
+  <!-- Chef Info - Right & Lower -->
+  <div class="chef">
+    <img src="./images/Brown Simple Circle Restaurant Logo(1).png" alt="Chef Shazia" loading="lazy">
+    <h3>Meet The Chef</h3>
+    <p>
+      Shazia is not just the heart of our kitchen—she’s also the brain behind our real-time operation. With over a decade
+      of experience in authentic Pakistani cooking, she brings unmatched flavor to every meal.
+    </p>
+    <p>
+      From preparing spice mixes to overseeing live orders, Shazia ensures every dish reflects homemade comfort, consistency,
+      and a passion for food. She’s also quick to respond on WhatsApp and handles custom orders with care.
+    </p>
+  </div>
+  </div>
+</section>
+<section class="testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonial-slider">
+    <div class="testimonial-images-wrapper">
+      <img src="./images/testimonial-4.jpg" alt="testimonial">
+      <img src="./images/testimonial-2.jpg" alt="testimonial">
+      <img src="./images/testimonial-3.jpg" alt="testimonial">
+      <img src="./images/testimonial-1.jpg" alt="testimonial">
+
+      <!-- Repeat images for seamless scrolling -->
+      <img src="./images/testimonial-4.jpg" alt="testimonial">
+      <img src="./images/testimonial-2.jpg" alt="testimonial">
+      <img src="./images/testimonial-3.jpg" alt="testimonial">
+      <img src="./images/testimonial-1.jpg" alt="testimonial">
+    </div>
+  </div>
+</section>
+<section class="whatsapp-contact">
+  <h2>Order via WhatsApp</h2>
+  <p>Place your order directly with us through WhatsApp. Just send your name, order details, and delivery address.</p>
+  <a href="https://wa.me/923360898084" target="_blank" class="whatsapp-button">
+    <i class="material-icons">chat</i> Chat on WhatsApp
+  </a>
+</section>
+
 </body>
+<footer class="footer">
+  <div class="footer-bg"></div>
+  <div class="footer-content">
+    <h3>Connect With Us</h3>
+    <p>Follow us on social media for latest updates and promotions!</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/Shazia Amir" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/taste.byshazia" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@taste.by.shazia" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/923360898084" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2025 Taste By Shazia. All rights reserved.</p>
+  </div>
+</footer>
+<script src="index.js"></script>
 </html>
